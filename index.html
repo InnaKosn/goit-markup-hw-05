@@ -60,7 +60,9 @@
       <section class="section hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-modal-btn" type="button">Замовити послугу</button>
+          <button class="hero-modal-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--секция себя презентовать-->
@@ -123,28 +125,37 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="worky-list list">
             <li class="worky-elem">
-              <img
-                class="worky-pic"
-                src="./images/box-1-img.jpg"
-                alt="печать на клаві"
-                width="370"
-              />
+              <div class="worky-over">
+                <img
+                  class="worky-pic"
+                  src="./images/box-1-img.jpg"
+                  alt="печать на клаві"
+                  width="370"
+                />
+                <p class="worky-text">ДЕСКТОПНІ ДОДАТКИ</p>
+              </div>
             </li>
             <li class="worky-elem">
-              <img
-                class="worky-pic"
-                src="./images/box-2-img.jpg"
-                alt="смартфон та ноутбук"
-                width="370"
-              />
+              <div class="worky-over">
+                <img
+                  class="worky-pic"
+                  src="./images/box-2-img.jpg"
+                  alt="смартфон та ноутбук"
+                  width="370"
+                />
+                <p class="worky-text">МОБІЛЬНІ ДОДАТКИ</p>
+              </div>
             </li>
             <li class="worky-elem">
-              <img
-                class="worky-pic"
-                src="./images/box-3-img.jpg"
-                alt="планшет та ноутбук"
-                width="370"
-              />
+              <div class="worky-over">
+                <img
+                  class="worky-pic"
+                  src="./images/box-3-img.jpg"
+                  alt="планшет та ноутбук"
+                  width="370"
+                />
+                <p class="worky-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -572,5 +583,16 @@
         </div>
       </div>
     </footer>
+    <!--модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" height="18px" width="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
